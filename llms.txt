@@ -1,0 +1,17 @@
+# Wheelz Business Tools
+
+> Free interactive micro-calculators and unit economics tools for freelancers, agency owners, SaaS founders, creators, and trade contractors.
+
+## Business & Pricing Calculators
+
+- [Wheelz Business Tools Directory](https://wheelzsudo.github.io/tools/): Central filterable hub and directory index for all 10 business micro-calculators.
+- [Freelance Rate Calculator](https://wheelzsudo.github.io/calc/): Calculate target hourly and day rates based on desired salary, overhead, and taxes.
+- [Rental Property Cash Flow Calculator](https://wheelzsudo.github.io/rentalcalc): Analyze real estate investment cash flow, mortgage payments, and net operating income.
+- [Ad Spend & ROAS Calculator](https://wheelzsudo.github.io/adcalc): Model campaign target revenue, break-even ROAS thresholds, and max target CPA.
+- [Agency Retainer Pricing Calculator](https://wheelzsudo.github.io/retainercalc): Structure monthly agency retainers based on revenue targets and fulfillment hours.
+- [E-Commerce Profit Margin Calculator](https://wheelzsudo.github.io/sourcingcalc): Calculate product unit economics, landed COGS, shipping fees, and net profit per unit.
+- [SaaS Churn & LTV Calculator](https://wheelzsudo.github.io/onboardingcalc): Estimate Customer Lifetime Value (LTV), subscriber lifespan, and monthly churn loss.
+- [Personal Trainer Rate Calculator](https://wheelzsudo.github.io/fitnesscalc): Calculate fitness session pricing, monthly packages, and client capacity goals.
+- [Trade Contractor Job Estimator](https://wheelzsudo.github.io/contractorcalc): Model trade project bids, billable labor totals, and material markups.
+- [Podcast Sponsorship Rate Calculator](https://wheelzsudo.github.io/mediakitcalc): Estimate per-episode ad spot rates, sponsorship earnings, and CPM benchmarks.
+- [Course Launch Revenue Calculator](https://wheelzsudo.github.io/launchcalc): Model digital product launch earnings, conversion rates, and order bump revenue.
