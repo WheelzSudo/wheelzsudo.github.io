@@ -3,13 +3,13 @@
 
   <!-- Main Calculator Directory Hub -->
   <url>
-    <loc>https://wheelzsudo.github.io/tools/</loc>
+    <loc>https://wheelzsudo.github.io/</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Freelance Hourly Rate Calculator -->
+  <!-- Individual Calculator Tools -->
   <url>
     <loc>https://wheelzsudo.github.io/calc/</loc>
     <lastmod>2026-08-19</lastmod>
@@ -17,7 +17,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Rental Property Cash Flow Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/rentalcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -25,7 +24,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Ad Spend & ROAS Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/adcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -33,7 +31,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Agency Retainer Pricing Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/retainercalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -41,7 +38,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- E-Commerce Profit Margin Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/sourcingcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -49,7 +45,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- SaaS Churn & LTV Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/onboardingcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -57,7 +52,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Personal Trainer Rate Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/fitnesscalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -65,7 +59,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Trade Contractor Job Estimator -->
   <url>
     <loc>https://wheelzsudo.github.io/contractorcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -73,7 +66,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Podcast Sponsorship Rate Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/mediakitcalc</loc>
     <lastmod>2026-08-19</lastmod>
@@ -81,7 +73,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Course Launch Revenue Calculator -->
   <url>
     <loc>https://wheelzsudo.github.io/launchcalc</loc>
     <lastmod>2026-08-19</lastmod>
