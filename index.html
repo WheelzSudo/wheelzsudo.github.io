@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO META TAGS -->
+  <title>Free Business Calculators & Unit Economics Toolkit | Wheelz</title>
+  <meta name="description" content="Free suite of 10 interactive business calculators, rate estimators, and unit economics tools for freelancers, creators, agencies, SaaS founders, and contractors.">
+  <meta name="keywords" content="free business calculators, rate calculators, freelance rate calculator, roas calculator, saas ltv calculator, rental property cash flow calculator, contractor estimate tool, podcast cpm calculator">
+  <meta name="author" content="Wheelz Business Tools">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://wheelzsudo.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wheelzsudo.github.io/">
+  <meta property="og:title" content="Free Business Calculators & Unit Economics Toolkit">
+  <meta property="og:description" content="Calculate rates, campaign ROAS, course revenue, SaaS LTV, and contractor bids instantly with our free micro-calculator suite.">
+  <meta property="og:site_name" content="Wheelz Business Toolkit">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Business Calculators & Unit Economics Toolkit">
+  <meta name="twitter:description" content="Free suite of 10 micro-calculators designed for freelancers, creators, agencies, and small business owners.">
+
+  <!-- STRUCTURED DATA (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://wheelzsudo.github.io/#website",
+        "url": "https://wheelzsudo.github.io/",
+        "name": "Wheelz Business Tools",
+        "description": "Free interactive micro-calculators for service pricing, ad performance, and financial unit economics."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://wheelzsudo.github.io/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://wheelzsudo.github.io/"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://wheelzsudo.github.io/#itemlist",
+        "name": "Free Business & Pricing Calculators",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Freelance Hourly Rate Calculator",
+            "url": "https://wheelzsudo.github.io/calc/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rental Property Cash Flow Calculator",
+            "url": "https://wheelzsudo.github.io/rentalcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ad Spend & ROAS Calculator",
+            "url": "https://wheelzsudo.github.io/adcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Agency Retainer Pricing Calculator",
+            "url": "https://wheelzsudo.github.io/retainercalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "E-Commerce Profit Margin Calculator",
+            "url": "https://wheelzsudo.github.io/sourcingcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "SaaS Churn & LTV Calculator",
+            "url": "https://wheelzsudo.github.io/onboardingcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Personal Trainer Rate Calculator",
+            "url": "https://wheelzsudo.github.io/fitnesscalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Trade Contractor Job Estimator",
+            "url": "https://wheelzsudo.github.io/contractorcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Podcast Sponsorship Rate Calculator",
+            "url": "https://wheelzsudo.github.io/mediakitcalc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Course Launch Revenue Calculator",
+            "url": "https://wheelzsudo.github.io/launchcalc"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.025em;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: -30px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .controls {
+      background: #ffffff;
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 240px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: var(--bg-color);
+      color: var(--text-main);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: #ffffff;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      background: var(--bg-color);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .tool-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .tool-card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    .tool-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .launch-btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .launch-btn:hover {
+      background: var(--primary-hover);
+    }
+
+    /* INDEXABLE SEO CONTENT SECTION */
+    .seo-article {
+      background: #ffffff;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      padding: 40px 32px;
+      margin-top: 32px;
+    }
+
+    .seo-article h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-main);
+    }
+
+    .seo-article h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 24px 0 12px 0;
+      color: var(--text-main);
+    }
+
+    .seo-article p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .seo-article ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .seo-article li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      background: #ffffff;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Creator & Founder Business Tools</h1>
+    <p>Free interactive micro-calculators for service pricing, ad performance, digital product launches, and unit economics.</p>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search calculators (e.g., ROAS, Freelance, Retainer)...">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Tools</button>
+        <button class="filter-btn" data-filter="freelance">Freelance & Services</button>
+        <button class="filter-btn" data-filter="marketing">Marketing & E-Commerce</button>
+        <button class="filter-btn" data-filter="creators">Creators & Media</button>
+        <button class="filter-btn" data-filter="saas">SaaS & Real Estate</button>
+      </div>
+    </div>
+
+    <div class="tools-grid" id="toolsGrid">
+
+      <article class="tool-card" data-category="freelance">
+        <div>
+          <div class="card-category">Freelance & Services</div>
+          <h2>Freelance Rate Calculator</h2>
+          <p>Determine target hourly and day rates based on desired net income, business overhead, taxes, and billable capacity.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/calc/" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="saas">
+        <div>
+          <div class="card-category">Real Estate & Investing</div>
+          <h2>Rental Cash Flow Calculator</h2>
+          <p>Analyze investment property profitability, mortgage payments, property taxes, maintenance buffers, and net operating income.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/rentalcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="marketing">
+        <div>
+          <div class="card-category">Marketing & E-Commerce</div>
+          <h2>Ad Spend & ROAS Calculator</h2>
+          <p>Calculate target gross revenue, break-even ROAS thresholds, maximum allowable CPA, and net ad profit.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/adcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="freelance">
+        <div>
+          <div class="card-category">Agency & B2B</div>
+          <h2>Agency Retainer Calculator</h2>
+          <p>Structure high-margin monthly client retainers based on revenue goals, fulfillment hours, and software overhead reserves.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/retainercalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="marketing">
+        <div>
+          <div class="card-category">Marketing & E-Commerce</div>
+          <h2>E-Commerce Profit Calculator</h2>
+          <p>Model unit economics, supplier COGS, shipping expenses, payment gateway fees, and net profit per unit.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/sourcingcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="saas">
+        <div>
+          <div class="card-category">SaaS & Software</div>
+          <h2>SaaS Churn & LTV Calculator</h2>
+          <p>Estimate Customer Lifetime Value (LTV), average subscriber lifespan, monthly churn loss, and gross margin adjustments.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/onboardingcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="freelance">
+        <div>
+          <div class="card-category">Fitness & Coaching</div>
+          <h2>Personal Trainer Rate Calculator</h2>
+          <p>Calculate required session rates, monthly client retainers, weekly floor hours, and client capacity goals.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/fitnesscalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="freelance">
+        <div>
+          <div class="card-category">Trades & Contracting</div>
+          <h2>Trade Job Estimator</h2>
+          <p>Generate profitable project bids, billable labor totals, material markups, and gross profit multipliers.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/contractorcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="creators">
+        <div>
+          <div class="card-category">Creators & Media</div>
+          <h2>Podcast Sponsorship Calculator</h2>
+          <p>Estimate per-episode ad spot rates, monthly sponsorship earnings, and CPM benchmarks based on episode downloads.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/mediakitcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+      <article class="tool-card" data-category="creators">
+        <div>
+          <div class="card-category">Creators & Media</div>
+          <h2>Course Launch Revenue Calculator</h2>
+          <p>Model digital product launch earnings, email conversion rates, VIP order bump take rates, and revenue per subscriber.</p>
+        </div>
+        <a href="https://wheelzsudo.github.io/launchcalc" class="launch-btn" target="_blank" rel="noopener">Open Calculator &rarr;</a>
+      </article>
+
+    </div>
+
+    <!-- CRAWLABLE COPY TO ELIMINATE THIN CONTENT PENALIZATION -->
+    <article class="seo-article">
+      <h2>Why Unit Economics & Pricing Accuracy Drive Business Growth</h2>
+      <p>Whether operating as an independent freelancer, running a digital agency, launching a SaaS platform, or scaling an e-commerce store, inaccurate pricing models erode profitability. Operating on thin margins without factoring in overhead, taxes, payment processing fees, or churn leads to phantom revenue.</p>
+
+      <h3>How Our Business Calculators Help You Scale</h3>
+      <ul>
+        <li><strong>Service Rate Optimization:</strong> Our service calculators (Freelance, Agency, Personal Trainer, and Trade Contractor) calculate target billing rates derived from net take-home salary goals, actual billable hours, and tax buffers.</li>
+        <li><strong>Paid Advertising Efficiency:</strong> The Ad Spend & ROAS calculator determines break-even return targets and maximum allowable target CPA before committing ad capital on Meta, Google, or TikTok.</li>
+        <li><strong>Subscription & Recurring Revenue Modeling:</strong> The SaaS Churn & LTV calculator models gross margin contribution, customer lifespan, and churn impact to safeguard monthly recurring revenue (MRR).</li>
+        <li><strong>Media & Creator Monetization:</strong> The Podcast Sponsorship and Course Launch calculators allow creators to price host-read ad spots using industry CPM standards and forecast launch conversion tiers.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    Powered by Wheelz Free Business Toolkit &bull; Free Open-Source Tools
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.tool-card');
+
+    function filterTools() {
+      const query = searchInput.value.toLowerCase();
+      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        const category = card.dataset.category;
+
+        const matchesSearch = text.includes(query);
+        const matchesCategory = (activeFilter === 'all' || category === activeFilter);
+
+        card.style.display = (matchesSearch && matchesCategory) ? 'flex' : 'none';
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterTools();
+      });
+    });
+
+    searchInput.addEventListener('input', filterTools);
+  </script>
+</body>
+</html>
