@@ -2,9 +2,12 @@
 
 > Free interactive micro-calculators and unit economics tools for freelancers, agency owners, SaaS founders, creators, and trade contractors.
 
-## Business & Pricing Calculators
+## Main Directory
 
-- [Wheelz Business Tools Directory](https://wheelzsudo.github.io/tools/): Central filterable hub and directory index for all 10 business micro-calculators.
+- [Wheelz Business Tools Directory](https://wheelzsudo.github.io/): Central filterable hub and index for all 10 business micro-calculators.
+
+## Individual Calculators
+
 - [Freelance Rate Calculator](https://wheelzsudo.github.io/calc/): Calculate target hourly and day rates based on desired salary, overhead, and taxes.
 - [Rental Property Cash Flow Calculator](https://wheelzsudo.github.io/rentalcalc): Analyze real estate investment cash flow, mortgage payments, and net operating income.
 - [Ad Spend & ROAS Calculator](https://wheelzsudo.github.io/adcalc): Model campaign target revenue, break-even ROAS thresholds, and max target CPA.
